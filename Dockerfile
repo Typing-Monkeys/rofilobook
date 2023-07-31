@@ -2,6 +2,7 @@ FROM kubeflownotebookswg/jupyter-pytorch-cuda-full:v1.7.0
 
 USER root
 
+RUN pam-auth-update
 RUN echo 'root:Docker!' | chpasswd
 
 RUN apt-get update -y
