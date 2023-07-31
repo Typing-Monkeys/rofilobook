@@ -1,7 +1,6 @@
 FROM kubeflownotebookswg/jupyter-pytorch-cuda-full:v1.7.0
 
-RUN echo '1234patata' | passwd --stdin root 
-RUN echo '1234patata' | passwd --stdin jovyan 
+RUN echo 'root:Docker!' | chpasswd
 
 USER root
 
