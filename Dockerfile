@@ -1,8 +1,8 @@
 FROM kubeflownotebookswg/jupyter-pytorch-cuda-full:v1.7.0
 
-RUN echo 'root:Docker!' | chpasswd
-
 USER root
+
+RUN echo 'root:Docker!' | chpasswd
 
 RUN apt-get update -y
 RUN apt-get upgrade -y
