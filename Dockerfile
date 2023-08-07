@@ -14,3 +14,4 @@ RUN chpasswd <<<"root:root" && \
 USER jovyan
 
 RUN pip install ipywidgets==8.0.4
+RUN jupyter nbextension enable --py widgetsnbextension
