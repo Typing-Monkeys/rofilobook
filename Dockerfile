@@ -11,4 +11,4 @@ USER rofilo
 WORKDIR /home/rofilo
 
 ENTRYPOINT jupyter lab
-RUN jupyter nbextension enable --py widgetsnbextension
+# RUN jupyter nbextension enable --py widgetsnbextension
