@@ -6,11 +6,10 @@ RUN username=jovyan \
   chpasswd <<<"$username:$password"
 
 RUN pip install plotly
-RUN pip install darts
-RUN pip install -U torch torchaudio --no-cache-dir
 RUN pip install wandb
+RUN pip install jupyterlab
+RUN pip install notebook
 RUN pip install ipywidgets==8.0.4
-RUN jupyter nbextension enable --py widgetsnbextension
 
 # RUN useradd -ms /bin/bash rofilo
 # USER rofilo
