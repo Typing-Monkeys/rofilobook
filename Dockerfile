@@ -1,5 +1,7 @@
 FROM pytorch/pytorch:2.0.1-cuda11.7-cudnn8-devel
 
+USER jovyan
+
 RUN pip install plotly
 RUN pip install wandb
 RUN pip install jupyterlab
