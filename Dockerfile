@@ -7,6 +7,7 @@ WORKDIR /home/rofilo
 RUN pip install plotly
 RUN pip install wandb
 RUN pip install jupyterlab
+RUN pip install notebook
 RUN pip install ipywidgets==8.0.4
 
 RUN jupyter lab
