@@ -12,3 +12,5 @@ RUN chpasswd <<<"root:root" && \
     sed -Ei 's/(.*pam_deny.so)/# \1/' /etc/pam.d/su
 
 USER jovyan
+
+RUN pip install ipywidgets==8.0.4
