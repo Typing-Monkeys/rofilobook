@@ -1,9 +1,13 @@
 FROM kubeflownotebookswg/jupyter-pytorch-cuda-full:v1.7.0
 
+USER root
+
 RUN username=jovyan \
   password=jovyan \
   adduser --gecos "" --disabled-password $username \
   chpasswd <<<"$username:$password"
+
+USER jovyan
 
 RUN pip install plotly
 RUN pip install wandb
