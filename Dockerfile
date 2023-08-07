@@ -1,6 +1,8 @@
 FROM pytorch/pytorch:2.0.1-cuda11.7-cudnn8-devel
 
-USER jovyan
+RUN useradd -ms /bin/bash rofilo
+USER rofilo
+WORKDIR /home/rofilo
 
 RUN pip install plotly
 RUN pip install wandb
