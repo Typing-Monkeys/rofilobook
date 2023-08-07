@@ -10,5 +10,5 @@ RUN useradd -ms /bin/bash rofilo
 USER rofilo
 WORKDIR /home/rofilo
 
-RUN jupyter lab
+ENTRYPOINT jupyter lab
 RUN jupyter nbextension enable --py widgetsnbextension
