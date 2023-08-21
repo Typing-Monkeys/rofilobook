@@ -2,7 +2,9 @@ FROM ghcr.io/typing-monkeys/rofilobook:latest
 
 USER root
 
-RUN apt-get install graphviz -y
+RUN apt-get update -y
+RUN apt-get upgrade -y
+RUN apt-get -y install graphviz
 
 USER jovyan
 
