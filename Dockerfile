@@ -12,3 +12,4 @@ RUN pip install graphviz
 RUN pip install plotly
 RUN pip install wandb
 RUN pip install torchview
+RUN pip install torchmetrics
