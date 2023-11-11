@@ -1,4 +1,4 @@
-FROM kubeflownotebookswg/jupyter-pytorch-cuda-full:v1.7.0
+FROM kubeflownotebookswg/jupyter-pytorch-cuda-full:latest
 
 USER root
 
@@ -13,5 +13,6 @@ RUN chpasswd <<<"root:root" && \
 
 USER jovyan
 
+RUN pip install plotly
 RUN pip install ipywidgets==8.0.4
 RUN jupyter nbextension enable --py widgetsnbextension
